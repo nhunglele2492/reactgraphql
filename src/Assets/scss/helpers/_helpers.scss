@@ -1,0 +1,151 @@
+// Helper classes
+
+.font {
+  &--small {
+    font-size: rem(14px);
+  }
+
+  &--tiny {
+    font-size: rem(13px);
+  }
+}
+
+.granite-green {
+  color: $gray-89;
+}
+
+.mist-gray {
+  color: $silver;
+}
+
+.blue {
+  color: $blue;
+}
+
+.white {
+  color: $white;
+}
+
+.bg {
+  &--white {
+    background-color: $white;
+  }
+
+  &--light-tan {
+    background-color: $gray-f4;
+  }
+
+  &--light-grey {
+    background-color: $teal-f3;
+  }
+
+  &--slate-grey {
+    background-color: $teal-dc;
+  }
+
+  &--teal {
+    background-color: $teal;
+  }
+
+  &--orange {
+    background-color: orange;
+  }
+}
+
+.link-light,
+%link-light {
+  a {
+    &,
+    &:visited {
+      @extend %text-light;
+
+      &:active,
+      &:hover {
+        @extend %text-light;
+        opacity: .8;
+      }
+    }
+  }
+}
+
+.link-dark,
+%link-dark {
+  a {
+    &,
+    &:visited {
+      @extend %text-dark;
+
+      &:active,
+      &:hover {
+        @extend %text-dark;
+        opacity: .7;
+      }
+    }
+  }
+}
+
+%link-primary {
+  a {
+    &,
+    &:visited {
+      @extend %text-primary;
+
+      &:active,
+      &:hover {
+        @extend %text-primary;
+        opacity: .7;
+      }
+    }
+  }
+}
+
+%link-secondary {
+  a {
+    &,
+    &:visited {
+      @extend %text-secondary;
+
+      &:active,
+      &:hover {
+        @extend %text-secondary;
+        opacity: .7;
+      }
+    }
+  }
+}
+
+.text-light,
+%text-light {
+  color: $white;
+}
+
+.link-dark,
+%link-dark {
+  a {
+    &,
+    &:visited {
+      @extend %text-dark;
+
+      &:active,
+      &:hover {
+        @extend %text-dark;
+        opacity: .7;
+      }
+    }
+  }
+}
+
+.text-dark,
+%text-dark {
+  color: $black;
+}
+
+.text-primary,
+%text-primary {
+  color: $primary-color;
+}
+
+.text-secondary,
+%text-secondary {
+  color: $secondary-color;
+}
