@@ -3,7 +3,7 @@ import React from 'react';
 import { graphql } from 'react-apollo';
 import gql from 'graphql-tag';
 
-const About = ({ data: { allPosts, refetch } }) => {
+const ReactGraphql = ({ data: { allPosts, refetch } }) => {
   return (
     <div>
       <button onClick={() => refetch()}>Refresh</button>
@@ -19,4 +19,4 @@ export default graphql(gql`
       description
     }
   }
-`)(About);
+`)(ReactGraphql);
