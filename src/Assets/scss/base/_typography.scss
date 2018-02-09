@@ -43,3 +43,32 @@ a {
     color: $link-color-hover;
   }
 }
+
+.Collapsible {
+  margin-bottom: rem(20px);
+
+  &__trigger {
+    background-color: $primary-color;
+    padding: rem(10px);
+    display: block;
+    color: $white;
+    position: relative;
+    cursor: pointer;
+
+    &.is-closed {
+      &:after {
+        @extend %icons;
+        @etend .icon-triangle-down;
+        position: absolute;
+        color: black;
+        right: 0;
+        font-size: rem(18px);
+      }
+    }
+  }
+
+
+  &__contentInner {
+    padding: rem(20px);
+  }
+}

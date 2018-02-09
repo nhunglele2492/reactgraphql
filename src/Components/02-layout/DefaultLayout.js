@@ -1,10 +1,7 @@
 import React from 'react';
-// import { Spinner } from '@blueprintjs/core';
-
-import { app } from '../firebase';
 // SiteWide
-import Header from '../siteWide/Header';
-import Footer from '../siteWide/Footer';
+import Header from '../00-siteWide/header/header';
+import Footer from '../00-siteWide/footer/footer';
 
 class DefaultLayout extends React.Component {
   constructor() {
@@ -12,20 +9,6 @@ class DefaultLayout extends React.Component {
     this.state = {
       authenticated: false,
     };
-  }
-
-  componentWillMount() {
-    this.removeAuthListener = app.auth().onAuthStateChanged((user) => {
-      if (user) {
-        this.setState({
-          authenticated: true
-        })
-      } else {
-        this.setState({
-          authenticated: false
-        })
-      }
-    })
   }
 
   render() {
@@ -39,7 +22,7 @@ class DefaultLayout extends React.Component {
     return (
       <div>
         <div className="header">
-          <Header authenticated={this.state.authenticated} />
+          <Header/>
         </div>
         <div className={"main-content " + container}>
           {this.props.children}

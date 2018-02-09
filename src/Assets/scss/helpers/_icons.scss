@@ -1,5 +1,5 @@
 %icons {
-  font-family: 'fcl';
+  font-family: 'ffw';
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -17,16 +17,16 @@
   }
 }
 
-.icon-play-btn:before {
-  content: '\e91c';
-}
-
-.icon-psoc6:before {
-  content: '\e918';
-}
-
-.icon-software:before {
+.icon-triangle-down:before {
   content: '\e919';
+}
+
+.icon-arrow_back:before {
+  content: '\e91a';
+}
+
+.icon-search:before {
+  content: '\e918';
 }
 
 .icon-unlock:before {
@@ -37,16 +37,8 @@
   content: '\e917';
 }
 
-.icon-community:before {
-  content: '\e91a';
-}
-
-.icon-store:before {
-  content: '\e91b';
-}
-
 .icon-newspaper-o:before {
-  content: "\e915";
+  content: '\e915';
 }
 
 .icon-date:before {
@@ -109,7 +101,7 @@
   content: '\e904';
 }
 
-.icon-arrow-left:before {
+.icon-arrow-left2:before {
   content: '\e906';
 }
 

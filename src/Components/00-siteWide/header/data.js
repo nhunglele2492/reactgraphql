@@ -4,6 +4,10 @@ var data = [
     "url": "/"
   },
   {
+    "text": "Hero Banner",
+    "url": "/banner"
+  },
+  {
     "text": "Graphql",
     "url": "/graphql"
   }

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import DefaultLayout from '../Components/02-layout/DefaultLayout';
+
 import HeroBanner  from '../Components/03-heroBanner/heroBanner';
 import Cards  from '../Components/04-cards/cards';
 import ReactSlickDemo  from '../Components/07-slider/slider';
@@ -105,13 +107,13 @@ class Home extends Component {
 
   render() {
     return (
-      <div className="home-page">
-      <HeroBanner />
-      <Cta />
-      <Cards items={cardList}/>
-      <GridImage items={gridImageList}/>
-      <ReactSlickDemo settings = {this.settings} items= {sliderList}/>
-      </div>
+      <DefaultLayout>
+        <HeroBanner />
+        <Cta />
+        <Cards items={cardList}/>
+        <GridImage items={gridImageList}/>
+        <ReactSlickDemo settings = {this.settings} items= {sliderList}/>
+      </DefaultLayout>
     );
   }
 }
